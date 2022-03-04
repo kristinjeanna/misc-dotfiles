@@ -1,0 +1,41 @@
+[user]
+	name = Kristin Jeanna
+	email = 67802120+kristinjeanna@users.noreply.github.com
+	signingkey = D43B33495AF03793
+
+[color]
+	ui = auto
+	
+[color "status"]
+	added = yellow
+	changed = green
+	untracked = cyan
+
+[push]
+	default = simple
+
+[alias]
+	st = status -sb
+	br = branch
+	co = checkout
+	ci = commit -m
+	all = commit -am
+	cis = commit -S -m
+	alls = commit -S -am
+	log = log --decorate
+	hist = log --decorate --oneline -30
+	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --
+	last = log -1 HEAD --stat
+	rv = remote -v
+	dw = diff --color-words
+	dic = diff --cached
+	dv = difftool -t vimdiff -y
+	gl = config --global -l
+
+	# show files ignored by git
+	ign = ls-files -o -i --exclude-standard
+[init]
+	defaultBranch = main
+
+[gpg]
+	program = /usr/local/bin/gpg
