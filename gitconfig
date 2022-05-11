@@ -5,6 +5,7 @@
 
 [core]
 	editor = code --wait
+	excludesfile = /Users/galdr/.gitignore_global
 
 [diff]
 	tool = vscode
