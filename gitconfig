@@ -49,6 +49,7 @@
 	gl = config --global -l
 	ff = merge --ff-only @{u}
 	prunerefs = remote prune origin
+  undolast = reset --soft HEAD~1
 
 	# show files ignored by git
 	ign = ls-files -o -i --exclude-standard
